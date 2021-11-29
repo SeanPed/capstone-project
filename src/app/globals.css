@@ -1,6 +1,4 @@
 body {
-  display: grid;
-  grid-template-rows: auto;
   height: 100vh;
   background-color: snow;
   max-width: 100vh;
@@ -12,7 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
+#app {
+  display: grid;
+  grid-template-rows: 48px auto 48px;
   background-color: black;
   padding: 1rem 0.5rem;
   overflow-y: auto;
@@ -22,4 +22,10 @@ main {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: red;
 }

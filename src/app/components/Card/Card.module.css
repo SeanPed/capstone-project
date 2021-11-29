@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 
-html {
-  background: black;
-  text-rendering: optimizeLegibility;
-}
-body {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
-}
-
 .card12 {
   width: 100%;
   margin: 0 auto;
