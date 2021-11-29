@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './Card.module.css';
+import './Card.module.css';
 
 export default function Card(): JSX.Element {
   return (
-    <div className="card">
+    <div className="card12">
       <div className="card--header">
-        <h2 className="glow">Name des Gegenstandes</h2>
+        <h2>Name des Gegenstandes</h2>
       </div>
       <hr />
       <div className="card--body">
