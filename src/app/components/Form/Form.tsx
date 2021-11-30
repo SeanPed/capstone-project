@@ -7,22 +7,23 @@ export default function Form(): JSX.Element {
       <label>
         Name des Gegenstandes
         <br />
-        <input type="text" />
+        <input type="text" autoComplete="off" placeholder="Test" />
       </label>
       <label>
         Beschreibung des Gegenstandes
         <br />
         <textarea rows={5}></textarea>
       </label>
-      <label className={styles.label_priority}>
-        Movie Rating
+      <label>
+        Gewicht
         <br />
-        <input type="number" defaultValue={0.5} min={0.5} max={25} />
+        <br />
+        <input type="number" defaultValue={0.5} min={0.5} max={25} step={0.5} />
         <br />
       </label>
       <br />
       <br />
-      <input type="submit" value="Submit" />
+      <input className="buttonmeBaby" type="submit" value="Submit" />
     </form>
   );
 }

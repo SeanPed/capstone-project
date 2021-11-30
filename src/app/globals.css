@@ -13,7 +13,7 @@ body {
 #app {
   display: grid;
   grid-template-rows: 48px auto 48px;
-  background-color: black;
+  background-color: snow;
   padding: 1rem 0.5rem;
   overflow-y: auto;
   margin: 0 auto;
