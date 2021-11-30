@@ -6,4 +6,4 @@ export default {
   component: deleteButton,
 };
 
-export const Cardtest = (): JSX.Element => <button />;
+export const Login = (): JSX.Element => <button>X</button>;
