@@ -1,9 +1,9 @@
 import React from 'react';
-import malusBar from './MalusBar';
+import MalusBar from './MalusBar';
 
 export default {
   title: 'Component/MalusBar',
-  component: malusBar,
+  component: MalusBar,
 };
 
-export const inputForm = (): JSX.Element => <div />;
+export const Regular = (): JSX.Element => <MalusBar />;
