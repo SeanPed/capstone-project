@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from './components/Card/Card';
+import Form from './components/Form/Form';
 
 function App(): JSX.Element {
   return (
     <>
-      <Card />
+      <Form />
     </>
   );
 }
