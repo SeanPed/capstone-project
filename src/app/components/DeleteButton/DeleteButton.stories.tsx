@@ -1,9 +1,9 @@
 import React from 'react';
-import deleteButton from './DeleteButton';
+import DeleteButton from './DeleteButton';
 
 export default {
   title: 'Component/DeleteButton',
-  component: deleteButton,
+  component: DeleteButton,
 };
 
-export const Login = (): JSX.Element => <button>X</button>;
+export const Login = (): JSX.Element => <DeleteButton />;

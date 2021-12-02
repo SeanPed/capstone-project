@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from './Form';
+import InputForm from './Form';
 
 export default {
   title: 'Component/Form',
-  component: Form,
+  component: InputForm,
 };
 
-export const inputForm = (): JSX.Element => <Form />;
+export const inputForm = (): JSX.Element => <InputForm />;
