@@ -1,9 +1,9 @@
-div {
+.malusBar_container {
   width: 100%;
-  background-color: red;
+  background-color: green;
 }
 
-p {
+.malusBar_text {
   color: black;
   font-weight: 100;
 }

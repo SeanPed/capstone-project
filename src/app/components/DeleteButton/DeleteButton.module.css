@@ -1,8 +1,11 @@
-button {
+.delete_button {
   color: snow;
   background: red;
-  font-size: 0.8em;
   border: none;
-  border-radius: 0.2em;
+  border-radius: 10px;
+  padding: 5px;
+  padding-bottom: -6px;
+  margin: 0;
   text-transform: uppercase;
+  align-self: center;
 }

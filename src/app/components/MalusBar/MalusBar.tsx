@@ -1,10 +1,12 @@
 import React from 'react';
-import './MalusBar.module.css';
+import classes from './MalusBar.module.css';
 
 export default function MalusBar(): JSX.Element {
   return (
-    <div>
-      <p>Overweight detected! - Ask Gamemaster for possible malus!</p>
+    <div className={classes.malusBar_container}>
+      <p className={classes.malusBar_text}>
+        Overweight detected! - Ask Gamemaster for possible malus!
+      </p>
     </div>
   );
 }
