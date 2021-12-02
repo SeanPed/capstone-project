@@ -1,13 +1,13 @@
 import React from 'react';
 import classes from './Form.module.css';
 
-export default function Form(): JSX.Element {
+export default function InputForm(): JSX.Element {
   return (
     <form action="">
       <label className={classes.labelTitle}>
         Name des Gegenstandes
         <br />
-        <input type="text" autoComplete="off" placeholder="Test" />
+        <input type="text" autoComplete="off" />
       </label>
       <label>
         Beschreibung des Gegenstandes
