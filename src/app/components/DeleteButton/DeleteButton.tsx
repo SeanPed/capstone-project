@@ -1,6 +1,11 @@
 import React from 'react';
-import './DeleteButton.module.css';
+import classes from './DeleteButton.module.css';
+import { TiDeleteOutline } from 'react-icons/ti';
 
-export default function deleteButton(): JSX.Element {
-  return <button>X</button>;
+export default function DeleteButton(): JSX.Element {
+  return (
+    <button className={classes.delete_button}>
+      <TiDeleteOutline size={20} />
+    </button>
+  );
 }
