@@ -2,11 +2,7 @@ button {
   color: snow;
   background: red;
   font-size: 0.8em;
-  padding: 0.4em 1em;
   border: none;
   border-radius: 0.2em;
   text-transform: uppercase;
-}
-button:hover {
-  box-shadow: 4px black;
 }
