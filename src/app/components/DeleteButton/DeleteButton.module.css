@@ -1,11 +1,9 @@
 .delete_button {
   color: snow;
   background: red;
-  border: none;
   border-radius: 10px;
-  padding: 5px;
-  padding-bottom: -6px;
+  padding-bottom: -3px;
+  padding-top: 4px;
   margin: 0;
-  text-transform: uppercase;
   align-self: center;
 }
