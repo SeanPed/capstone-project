@@ -1,9 +1,13 @@
-.malusBar_container {
-  width: 100%;
-  background-color: green;
-}
-
 .malusBar_text {
-  color: black;
-  font-weight: 100;
+  font-family: sans-serif;
+}
+.malusBar_container {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px #f7a7a3;
+  background-color: red;
+  text-align: center;
 }
