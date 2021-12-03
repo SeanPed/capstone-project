@@ -18,23 +18,23 @@ export default function InputForm(): JSX.Element {
         placeholder="Beschreibung des Gegenstandes"
       ></textarea>
       <div className={classes.spacing_div} />
-
+      <div className={classes.spacing_div} />
+      <label className={classes.lable_weight}>
+        Gewicht in Kilogramm <br />
+        (0,2kg Schritte!)
+      </label>
+      <div className={classes.spacing_div} />
       <input
         className={classes.input_field_weight}
         type="number"
-        placeholder="Gewicht"
         defaultValue={0.2}
         min={0.2}
         max={25}
         step={0.2}
       />
       <div className={classes.spacing_div} />
-      <label>
-        Gewicht in Kilogramm <br /> (0,2 kg Schritte Möglich)
-        <br />
-      </label>
-      <br />
-      <br />
+      <div className={classes.spacing_div} />
+      <div className={classes.spacing_div} />
       <button className={classes.submit_button}>Put it in the Backpack!</button>
     </form>
   );

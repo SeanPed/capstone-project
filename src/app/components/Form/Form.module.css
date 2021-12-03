@@ -22,6 +22,7 @@ textarea {
   outline: 0;
   text-align: center;
   width: 50%;
+  margin-left: 70px;
   align-self: center;
 }
 
@@ -30,6 +31,9 @@ textarea {
 }
 .labelTitle {
   font-size: 90px;
+}
+.lable_weight {
+  color: grey;
 }
 .input_field {
   background-color: #303245;
@@ -53,6 +57,7 @@ textarea {
   font-size: 18px;
   outline: 0;
   padding: 2px 10px 0;
+  width: 30%;
 }
 .spacing_div {
   padding-bottom: 10px;
