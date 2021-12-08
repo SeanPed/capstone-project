@@ -3,7 +3,7 @@ import './Card.module.css';
 
 export default function Card(): JSX.Element {
   return (
-    <span className="card12">
+    <span className="inventoryCard">
       <div className="card--header">
         <h2>Name des Gegenstandes</h2>
       </div>
