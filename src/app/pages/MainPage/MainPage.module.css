@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: 10% auto;
   justify-items: center;
-  height: 100vh;
   grid-template-areas: 'Top' 'Bottom';
   position: relative;
 }
