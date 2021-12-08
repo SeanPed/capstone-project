@@ -1,3 +1,24 @@
-h1 {
-  background-color: red;
+.body_div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% auto;
+  justify-items: center;
+  height: 100vh;
+  grid-template-areas: 'Top' 'Bottom';
+  position: relative;
+}
+.header_div {
+  grid-area: Top;
+  position: fixed;
+}
+.card_area_div {
+  border-top: 1px solid black;
+  grid-area: Bottom;
+  overflow-y: scroll;
+}
+.button_div {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
 }
