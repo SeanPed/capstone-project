@@ -5,7 +5,7 @@ import { TiDeleteOutline } from 'react-icons/ti';
 export default function DeleteButton(): JSX.Element {
   return (
     <button className={classes.delete_button}>
-      <TiDeleteOutline size={20} />
+      <TiDeleteOutline size={12} />
     </button>
   );
 }

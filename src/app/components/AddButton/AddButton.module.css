@@ -1,17 +1,17 @@
 .add_button {
-  background-color: hotpink;
+  background-color: cornflowerblue;
   color: white;
   padding: 5px;
   text-shadow: 0 1px 0 #fff;
   text-align: center;
   text-decoration: none;
   display: block;
-  border: 1px solid hotpink;
+  border: 1px solid cornflowerblue;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
   -ms-border-radius: 6px;
-  border-radius: 100%;
+  border-radius: 50%;
   -moz-box-shadow: 0 3px 5px black;
   -webkit-box-shadow: 0 3px 5px black;
   -o-box-shadow: 0 3px 5px black;
