@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import InputPage from './pages/InputPage/InputPage';
 import MainPage from './pages/MainPage/MainPage';
 
 function App(): JSX.Element {
@@ -7,7 +8,7 @@ function App(): JSX.Element {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
-        <Route path="/input" element={<h1>Hello World 2</h1>}></Route>
+        <Route path="/input" element={<InputPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
