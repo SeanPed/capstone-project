@@ -5,17 +5,23 @@
   justify-items: center;
   grid-template-areas: 'Top' 'Bottom';
   position: relative;
+  background-color: #01012b;
 }
 .header_div {
   grid-area: Top;
   position: fixed;
+  z-index: 5;
 }
 .card_area_div {
+  display: grid;
   border-top: 1px solid black;
   grid-area: Bottom;
   overflow-y: scroll;
+  justify-items: center;
+  gap: 10px;
 }
 .button_div {
+  z-index: 10;
   position: fixed;
   bottom: 10px;
   right: 10px;
