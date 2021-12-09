@@ -1,20 +1,14 @@
-.add_button {
-  background-color: #e0d9f6;
-  color: white;
-  padding: 5px;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  border: 1px solid cornflowerblue;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 50%;
-  -moz-box-shadow: 0 3px 5px black;
-  -webkit-box-shadow: 0 3px 5px black;
-  -o-box-shadow: 0 3px 5px black;
-  -ms-box-shadow: 0 3px 5px black;
-  box-shadow: 0 3px 5px grey;
+.button_area_div {
+  --aug-all-height: 64px !important;
+  --aug-border-all: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1f7ff;
+}
+.add_button_symbol {
+  background-color: #d1f7ff;
+  border: none;
+  padding-top: 10px;
 }

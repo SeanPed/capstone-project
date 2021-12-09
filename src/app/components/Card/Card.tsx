@@ -1,4 +1,5 @@
 import React from 'react';
+import DeleteButton from '../DeleteButton/DeleteButton';
 import classes from './Card.module.css';
 
 export default function Card(): JSX.Element {
@@ -8,6 +9,9 @@ export default function Card(): JSX.Element {
       tl-clip br-clip both"
       className={classes.card_body_div}
     >
+      <div className={classes.delete_button}>
+        <DeleteButton />
+      </div>
       <p className={classes.item_name}>Alte kriegsaxt</p>
       <p className={classes.item_description}>
         Eine Alte stumpfe Kriegsaxt, kaum zu gebrauchen, Stiel scheint morsch zu

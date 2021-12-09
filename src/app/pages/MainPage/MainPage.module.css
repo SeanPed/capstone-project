@@ -1,15 +1,19 @@
 .body_div {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 1fr auto;
   justify-items: center;
   grid-template-areas: 'Top' 'Bottom';
   position: relative;
   background-color: #01012b;
 }
 .header_div {
+  display: block;
+  width: 100%;
   grid-area: Top;
-  position: fixed;
+  position: sticky;
+  background-color: blue;
+  top: 0;
   z-index: 5;
 }
 .card_area_div {
