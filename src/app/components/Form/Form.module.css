@@ -3,7 +3,9 @@ textarea {
 }
 
 .input_form {
-  background-color: #15172b;
+  --aug-border-bg: #4ed9ff important!;
+
+  background-color: #fbf500;
   border-radius: 20px;
   padding: 20px;
   display: grid;
@@ -30,9 +32,11 @@ textarea {
   background-color: #06b;
 }
 .labelTitle {
+  font-family: 'OriginTech', sans-serif;
   font-size: 90px;
 }
 .lable_weight {
+  font-family: 'OriginTech', sans-serif;
   color: grey;
 }
 .input_field {

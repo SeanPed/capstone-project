@@ -3,7 +3,12 @@ import classes from './Form.module.css';
 
 export default function InputForm(): JSX.Element {
   return (
-    <form className={classes.input_form} action="">
+    <form
+      className={classes.input_form}
+      action=""
+      data-augmented-ui="
+  tl-2-clip-y tr-2-clip-y br-2-clip-y bl-2-clip-y border"
+    >
       <br />
       <input
         className={classes.input_field}
