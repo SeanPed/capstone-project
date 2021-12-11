@@ -6,7 +6,7 @@ import classes from './MainPage.module.css';
 
 export default function MainPage(): JSX.Element {
   return (
-    <div className={classes.body_div}>
+    <div className={classes.mainpage_div}>
       <div className={classes.header_div}>
         <h1>Hello World</h1>
       </div>
