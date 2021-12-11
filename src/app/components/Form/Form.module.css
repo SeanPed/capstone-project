@@ -3,21 +3,19 @@ textarea {
 }
 
 .input_form {
-  --aug-border-bg: #4ed9ff important!;
+  --aug-border-bg: #4ed9ff !important;
 
   background-color: #fbf500;
-  border-radius: 20px;
   padding: 20px;
   display: grid;
   justify-content: center;
 }
 
 .submit_button {
-  background-color: #08d;
-  border-radius: 12px;
+  background-color: #ff003c;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: snow;
   cursor: pointer;
   font-size: 18px;
   height: 50px;
@@ -25,7 +23,9 @@ textarea {
   text-align: center;
   width: 50%;
   margin-left: 70px;
+  margin-top: 15px;
   align-self: center;
+  font-family: 'OriginTech', sans-serif;
 }
 
 .submit_button:active {
@@ -40,8 +40,7 @@ textarea {
   color: grey;
 }
 .input_field {
-  background-color: #303245;
-  border-radius: 12px;
+  background-color: black;
   border: 0;
   box-sizing: border-box;
   align-self: center;
@@ -51,6 +50,7 @@ textarea {
   outline: 0;
   padding: 4px 20px 0;
   width: 100%;
+  margin-bottom: 10px;
 }
 .input_field_weight {
   background-color: #303245;
@@ -62,7 +62,4 @@ textarea {
   outline: 0;
   padding: 2px 10px 0;
   width: 30%;
-}
-.spacing_div {
-  padding-bottom: 10px;
 }
