@@ -14,9 +14,3 @@ export default function AddButton(): JSX.Element {
     </div>
   );
 }
-
-// <div data-augmented-ui="all-hexangle-up border" className={classes.button_area_div}>
-//   <button className={classes.add_button}>
-//     <GiLightBackpack size={56} className={classes.add_button_symbol} />
-//   </button>
-// </div>

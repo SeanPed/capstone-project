@@ -1,6 +1,7 @@
 .button_area_div {
+  --aug-border-bg: #4ed9ff !important;
   --aug-all-height: 76px !important;
-  --aug-border-all: 4px;
+  --aug-border-all: 1px;
 
   display: flex;
   align-items: center;
@@ -8,8 +9,9 @@
   background-color: #fbf500;
 }
 .button_area_div:active {
-  transform: scale(0.98);
-  box-shadow: 13px 12px 22px 11px rgba (247, 9, 9, 0.624);
+  --aug-border-bg: #fbf500;
+
+  transform: scale(0.5);
 }
 
 .add_button_symbol {

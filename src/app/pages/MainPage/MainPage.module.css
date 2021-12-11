@@ -1,4 +1,4 @@
-.body_div {
+.mainpage_div {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
@@ -13,12 +13,14 @@
   background-size: cover;
 }
 .header_div {
-  display: block;
-  width: 100%;
+  width: 95%;
+  height: 70%;
   grid-area: Top;
   position: sticky;
-  background-color: blue;
+  align-self: center;
+  background-color: transparent;
   top: 0;
+  margin: 5px 0 0 -10px;
   z-index: 5;
 }
 .card_area_div {

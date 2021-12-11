@@ -2,40 +2,43 @@
 @import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
 
 .card_body_div {
-  --aug-border-all: 2px;
-  --aug-border-bg: #ff2a6d;
-  --aug-inlay-bg: #01012b;
+  --aug-border-all: 2px !important;
+  --aug-border-bg: black !important;
+  --aug-inlay-bg: black !important;
 
   position: relative;
   width: 80%;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  background-color: #005678;
+  background-color: #4ed9ff;
   justify-items: center;
 }
 .item_name {
   font-size: 1.5rem;
-  color: #05d9e8;
+  color: #fbf500;
   margin: 0 auto;
   padding: 30px 0 15px 0;
   font-weight: 800;
   text-transform: uppercase;
   font-family: 'OriginTech', sans-serif;
+  text-align: center;
 }
 .item_description {
-  color: #05d9e8;
+  color: #fbf500;
   font-size: 0.75rem;
   font-weight: 600;
   margin: 10px;
   margin-top: 5px;
   overflow-y: scroll;
   font-family: 'OriginTech', sans-serif;
+  text-align: center;
 }
 
 .weight_area {
   margin-left: 40px;
   padding-bottom: 15px;
   color: #6ecbf5;
+  font-family: 'OriginTech', sans-serif;
 }
 .delete_button {
   position: absolute;
