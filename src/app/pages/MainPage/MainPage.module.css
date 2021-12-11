@@ -5,7 +5,12 @@
   justify-items: center;
   grid-template-areas: 'Top' 'Bottom';
   position: relative;
-  background-color: #01012b;
+  background-image: url(/Users/patrickmoller/hh-web-21-7/capstone-project/src/images/background-app-1.png);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 .header_div {
   display: block;
