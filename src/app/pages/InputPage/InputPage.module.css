@@ -1,0 +1,12 @@
+.body_div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% auto 20%;
+  justify-items: center;
+  size: 100vh;
+  grid-template-areas: 'Top' 'Center' 'Bottom';
+}
+.placeholder_div {
+  background-color: red;
+  grid-area: Top Bottom;
+}
