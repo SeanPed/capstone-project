@@ -15,22 +15,23 @@
 }
 .item_name {
   font-size: 1.5rem;
-  font-family: 'Open Sans', serif;
   color: #05d9e8;
   margin: 0 auto;
   padding: 30px 0 15px 0;
   font-weight: 800;
   text-transform: uppercase;
+  font-family: 'OriginTech', sans-serif;
 }
 .item_description {
   color: #05d9e8;
   font-size: 0.75rem;
-  font-family: 'Open Sans', serif;
   font-weight: 600;
   margin: 10px;
   margin-top: 5px;
   overflow-y: scroll;
+  font-family: 'OriginTech', sans-serif;
 }
+
 .weight_area {
   margin-left: 40px;
   padding-bottom: 15px;
