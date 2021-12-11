@@ -1,12 +1,16 @@
 import React from 'react';
 import classes from './TopBar.module.css';
 
-export default function (): JSX.Element {
+export default function TopBar(): JSX.Element {
   return (
-    <div className={classes.topbar_body_div}>
-      <div className={classes.topbar_tag_div}>
-        <p>Weight Value</p>
-      </div>
+    <div
+      data-augmented-ui="
+    tl-clip tr-clip  br-clip bl-clip border inlay"
+      className={classes.topbar_section_div}
+    >
+      <p className={classes.topbar_content}>
+        currently carried weight: (Placeholder)
+      </p>
     </div>
   );
 }

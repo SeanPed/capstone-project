@@ -1,0 +1,17 @@
+@import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
+
+.topbar_section_div {
+  --aug-border-bg: #4ed9ff;
+  --aug-border-all: 2px;
+  --aug-inlay-bg: #fbf500;
+
+  color: black;
+  background-color: #fbf500;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+.topbar_content {
+  text-align: center;
+  font-family: 'OriginTech', sans-serif;
+}
