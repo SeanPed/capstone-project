@@ -19,6 +19,9 @@ export default function MainPage(): JSX.Element {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   );

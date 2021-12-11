@@ -1,20 +1,19 @@
-.add_button {
-  background-color: cornflowerblue;
-  color: white;
-  padding: 5px;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  border: 1px solid cornflowerblue;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 50%;
-  -moz-box-shadow: 0 3px 5px black;
-  -webkit-box-shadow: 0 3px 5px black;
-  -o-box-shadow: 0 3px 5px black;
-  -ms-box-shadow: 0 3px 5px black;
-  box-shadow: 0 3px 5px grey;
+.button_area_div {
+  --aug-all-height: 76px !important;
+  --aug-border-all: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbf500;
+}
+.button_area_div:active {
+  transform: scale(0.98);
+  box-shadow: 13px 12px 22px 11px rgba (247, 9, 9, 0.624);
+}
+
+.add_button_symbol {
+  background-color: #fbf500;
+  border: none;
+  padding-top: 10px;
 }

@@ -1,21 +1,36 @@
 .body_div {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 1fr auto;
   justify-items: center;
   grid-template-areas: 'Top' 'Bottom';
   position: relative;
+  background-image: url(/Users/patrickmoller/hh-web-21-7/capstone-project/src/images/background-app-1.png);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 .header_div {
+  display: block;
+  width: 100%;
   grid-area: Top;
-  position: fixed;
+  position: sticky;
+  background-color: blue;
+  top: 0;
+  z-index: 5;
 }
 .card_area_div {
+  display: grid;
   border-top: 1px solid black;
   grid-area: Bottom;
   overflow-y: scroll;
+  justify-items: center;
+  gap: 10px;
 }
 .button_div {
+  z-index: 10;
   position: fixed;
   bottom: 10px;
   right: 10px;
