@@ -1,3 +1,43 @@
-.test {
-  color: red;
+@import '../../../../node_modules/augmented-ui/augmented-ui';
+
+.body_container {
+  padding: 20px;
+  background-color: hotpink;
+}
+
+.input_container {
+  --aug-border-bg: snow !important;
+  --aug-border-all: 2px !important;
+}
+
+.tag_color_blue {
+  --aug-border-bg: #03d7f2 !important;
+  --aug-border: 1px !important;
+
+  background-color: #03d7f2;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: snow;
+  font-family: 'OriginTech', sans-serif;
+}
+.tag_color_red {
+  --aug-border-bg: #ff003c !important;
+  --aug-border: 1px !important;
+
+  background-color: #ff003c;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: snow;
+  font-family: 'OriginTech', sans-serif;
+}
+
+.input_field {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: white;
+  font-family: 'OriginTech', sans-serif;
 }

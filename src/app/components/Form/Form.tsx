@@ -53,28 +53,3 @@ export default function InputForm(): JSX.Element {
     </form>
   );
 }
-
-// ideas:
-// <div class="title name" augmented-ui="tr-clip exe">Name of Item:</div>
-//         <div class="message_container-alt">
-//           <div class="message-alt" augmented-ui="exe bl-clip tr-clip">
-//             <input class="input">
-//             </input>
-//           </div>
-//         </div>
-//
-// CSS:
-// input.input {
-//   width: 100%;
-//   padding: 12px 20px;
-//   box-sizing: border-box;
-//   background-color: black;
-//   color: white;
-//   border: 0px;
-//   caret-color: #03d7f2;
-//   caret-width: 10px; }
-//
-//  input[type="text"] {
-//   background: transparent;
-//   border: none;
-//   border-bottom: 1px solid #000000;}

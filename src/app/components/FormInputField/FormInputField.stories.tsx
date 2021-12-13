@@ -6,4 +6,7 @@ export default {
   component: FormInputField,
 };
 
-export const Regular = (): JSX.Element => <FormInputField />;
+export const RegularBlue = (): JSX.Element => (
+  <FormInputField tagColor="Blue" />
+);
+export const RegularRed = (): JSX.Element => <FormInputField tagColor="Red" />;
