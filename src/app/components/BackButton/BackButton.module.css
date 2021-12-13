@@ -1,0 +1,24 @@
+@import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
+
+.button_area_div {
+  --aug-border-bg: #4ed9ff !important;
+  --aug-all-height: 76px !important;
+  --aug-border-all: 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbf500;
+}
+.button_area_div:active {
+  --aug-border-bg: #fbf500;
+
+  transform: scale(0.5);
+}
+
+.back_button_symbol {
+  background-color: #fbf500;
+  border: none;
+  padding-bottom: 0;
+  padding-right: 10px;
+}
