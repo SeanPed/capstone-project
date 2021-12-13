@@ -7,6 +7,8 @@ export default {
 };
 
 export const RegularBlue = (): JSX.Element => (
-  <FormInputField tagColor="Blue" />
+  <FormInputField tagColor="Blue" tagText="Item Name:" />
 );
-export const RegularRed = (): JSX.Element => <FormInputField tagColor="Red" />;
+export const RegularRed = (): JSX.Element => (
+  <FormInputField tagColor="Red" tagText="Item Description:" />
+);
