@@ -1,8 +1,8 @@
 @import '../../../../node_modules/augmented-ui/augmented-ui';
 
 .body_container {
-  padding: 20px;
-  background-color: hotpink;
+  padding: 5px 10px;
+  background-color: transparent;
 }
 
 .tag_color_blue {
@@ -32,10 +32,10 @@
 .input_field {
   width: 100%;
   box-sizing: border-box;
-  background-color: #fbf500;
+  background-color: black;
   padding: 12px 20px;
   border: none;
   border-bottom: 1px solid snow;
-  color: black;
+  color: snow;
   font-family: 'OriginTech', sans-serif;
 }

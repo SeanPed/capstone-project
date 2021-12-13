@@ -3,11 +3,13 @@ import classes from './FormInputField.module.css';
 type inputProps = {
   tagColor: string;
   tagText: string;
+  textRows: number;
 };
 
 export default function FormInputField({
   tagColor,
   tagText,
+  textRows,
 }: inputProps): JSX.Element {
   return (
     <div className={classes.body_container}>
@@ -26,7 +28,7 @@ export default function FormInputField({
     tr-clip bl-clip border"
         className={classes.input_container}
       >
-        <input className={classes.input_field} type="text" />
+        <textarea className={classes.input_field} rows={textRows} />
       </div>
     </div>
   );

@@ -38,28 +38,14 @@ textarea {
 .lable_weight {
   font-family: 'OriginTech', sans-serif;
   color: grey;
-}
-.input_field {
-  background-color: black;
-  border: 0;
-  box-sizing: border-box;
   align-self: center;
-  color: #eee;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-  margin-bottom: 10px;
+  margin-left: 60px;
 }
 .input_field_weight {
   background-color: #303245;
-  border-radius: 12px;
-  border: 0;
-  align-self: center;
+  display: block;
   color: #eee;
   font-size: 18px;
   outline: 0;
-  padding: 2px 10px 0;
-  width: 30%;
+  padding: 0.5em 1em;
 }
