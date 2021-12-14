@@ -19,8 +19,18 @@ export default function InputForm(): JSX.Element {
       tl-clip tr-clip br-clip bl-clip border"
     >
       <br />
-      <FormInputField tagText="Name of item:" tagColor="Blue" textRows={1} />
-      <FormInputField tagText="Item Description:" tagColor="Red" textRows={5} />
+      <FormInputField
+        tagText="Name of item:"
+        tagColor="Blue"
+        textRows={1}
+        defaultText={itemName}
+      />
+      <FormInputField
+        tagText="Item Description:"
+        tagColor="Red"
+        textRows={5}
+        defaultText={itemDescription}
+      />
       <br />
       <label className={classes.lable_weight}>
         Gewicht in Kilogramm <br /> (0,2kg Schritte!)
@@ -29,7 +39,7 @@ export default function InputForm(): JSX.Element {
       tr-clip bl-clip"
           className={classes.input_field_weight}
           type="number"
-          defaultValue={0.2}
+          defaultValue={itemWeight}
           min={0.2}
           max={25}
           step={0.2}
