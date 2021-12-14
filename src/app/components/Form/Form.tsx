@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 import FormInputField from '../FormInputField/FormInputField';
 import classes from './Form.module.css';
+import useLocalStorage from '../../utils/hooks/useLocalStorage';
 
 export default function InputForm(): JSX.Element {
+  const navigate = useNavigate();
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
   const [itemWeight, setItemWeight] = useState(0.2);
+  const [itemCards, setItemCards] = useState(
+    JSON.parse(window.localStorage.getItem('itemCards') || '[]')
+  );
+  useLocalStorage(itemCards, 'itemCards');
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const itemData = { itemName, itemDescription, itemWeight };
-    window.localStorage.setItem('itemCard', JSON.stringify(itemData));
-
-    return console.log('Item in the bag!');
+    const newItemCards = [...itemCards, itemData];
+    setItemCards(newItemCards);
+    console.log(itemCards);
   }
+
   return (
     <form
       className={classes.input_form}
