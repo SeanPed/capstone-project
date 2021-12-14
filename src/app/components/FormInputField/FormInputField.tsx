@@ -4,12 +4,14 @@ type inputProps = {
   tagColor: string;
   tagText: string;
   textRows: number;
+  defaultText: string;
 };
 
 export default function FormInputField({
   tagColor,
   tagText,
   textRows,
+  defaultText,
 }: inputProps): JSX.Element {
   return (
     <div className={classes.body_container}>
@@ -28,7 +30,11 @@ export default function FormInputField({
     tr-clip bl-clip border"
         className={classes.input_container}
       >
-        <textarea className={classes.input_field} rows={textRows} />
+        <textarea
+          className={classes.input_field}
+          rows={textRows}
+          value={defaultText}
+        />
       </div>
     </div>
   );

@@ -7,8 +7,18 @@ export default {
 };
 
 export const RegularBlue = (): JSX.Element => (
-  <FormInputField tagColor="Blue" tagText="Item Name:" textRows={1} />
+  <FormInputField
+    tagColor="Blue"
+    tagText="Item Name:"
+    textRows={1}
+    defaultText=""
+  />
 );
 export const RegularRed = (): JSX.Element => (
-  <FormInputField tagColor="Red" tagText="Item Description:" textRows={5} />
+  <FormInputField
+    tagColor="Red"
+    tagText="Item Description:"
+    textRows={5}
+    defaultText=""
+  />
 );
