@@ -9,17 +9,14 @@ export default function InputForm(): JSX.Element {
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
   const [itemWeight, setItemWeight] = useState(0.2);
-  const [itemCards, setItemCards] = useState(
-    JSON.parse(window.localStorage.getItem('itemCards') || '[]')
-  );
-  useLocalStorage(itemCards, 'itemCards');
+  const [itemCards, setItemCards] = useLocalStorage([], 'itemCards');
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const itemData = { itemName, itemDescription, itemWeight };
     const newItemCards = [...itemCards, itemData];
     setItemCards(newItemCards);
-    console.log(itemCards);
+    navigate('/');
   }
 
   return (
