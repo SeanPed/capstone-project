@@ -1,41 +1,40 @@
 import React from 'react';
+import FormInputField from '../FormInputField/FormInputField';
 import classes from './Form.module.css';
 
 export default function InputForm(): JSX.Element {
   return (
-    <form className={classes.input_form} action="">
+    <form
+      className={classes.input_form}
+      action=""
+      data-augmented-ui="
+      tl-clip tr-clip br-clip bl-clip border"
+    >
       <br />
-      <input
-        className={classes.input_field}
-        type="text"
-        autoComplete="off"
-        placeholder="Name des Gegenstandes"
-      />
-      <div className={classes.spacing_div} />
-      <textarea
-        className={classes.input_field}
-        rows={5}
-        placeholder="Beschreibung des Gegenstandes"
-      ></textarea>
-      <div className={classes.spacing_div} />
-      <div className={classes.spacing_div} />
+      <FormInputField tagText="Name of item:" tagColor="Blue" textRows={1} />
+      <FormInputField tagText="Item Description:" tagColor="Red" textRows={5} />
+      <br />
       <label className={classes.lable_weight}>
-        Gewicht in Kilogramm <br />
-        (0,2kg Schritte!)
+        Gewicht in Kilogramm <br /> (0,2kg Schritte!)
+        <input
+          data-augmented-ui="
+      tr-clip bl-clip"
+          className={classes.input_field_weight}
+          type="number"
+          defaultValue={0.2}
+          min={0.2}
+          max={25}
+          step={0.2}
+        />
       </label>
-      <div className={classes.spacing_div} />
-      <input
-        className={classes.input_field_weight}
-        type="number"
-        defaultValue={0.2}
-        min={0.2}
-        max={25}
-        step={0.2}
-      />
-      <div className={classes.spacing_div} />
-      <div className={classes.spacing_div} />
-      <div className={classes.spacing_div} />
-      <button className={classes.submit_button}>Put it in the Backpack!</button>
+      <br />
+      <button
+        data-augmented-ui="
+        tl-clip br-clip"
+        className={classes.submit_button}
+      >
+        Put it in the Backpack!
+      </button>
     </form>
   );
 }
