@@ -22,14 +22,14 @@ export default function InputForm(): JSX.Element {
       <FormInputField
         tagText="Name of item:"
         tagColor="Blue"
-        textRows={1}
         defaultText={itemName}
+        onChange={(event) => setItemName(event.target.value)}
       />
       <FormInputField
         tagText="Item Description:"
         tagColor="Red"
-        textRows={5}
         defaultText={itemDescription}
+        onChange={(event) => setItemDescription(event.target.value)}
       />
       <br />
       <label className={classes.lable_weight}>

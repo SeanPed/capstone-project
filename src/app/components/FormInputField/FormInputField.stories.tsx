@@ -10,15 +10,19 @@ export const RegularBlue = (): JSX.Element => (
   <FormInputField
     tagColor="Blue"
     tagText="Item Name:"
-    textRows={1}
     defaultText=""
+    onChange={function (): void {
+      throw new Error('Function not implemented.');
+    }}
   />
 );
 export const RegularRed = (): JSX.Element => (
   <FormInputField
     tagColor="Red"
     tagText="Item Description:"
-    textRows={5}
     defaultText=""
+    onChange={function (): void {
+      throw new Error('Function not implemented.');
+    }}
   />
 );
