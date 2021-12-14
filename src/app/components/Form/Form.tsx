@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FormInputField from '../FormInputField/FormInputField';
 import classes from './Form.module.css';
 
 export default function InputForm(): JSX.Element {
+  const [itemName, setItemName] = useState('');
+  const [itemDescription, setItemDescription] = useState('');
+  const [itemWeight, setItemWeight] = useState(0.2);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    return console.log('hello');
+  }
   return (
     <form
       className={classes.input_form}
-      action=""
+      onSubmit={handleSubmit}
       data-augmented-ui="
       tl-clip tr-clip br-clip bl-clip border"
     >
