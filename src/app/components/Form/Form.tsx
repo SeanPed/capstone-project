@@ -9,7 +9,10 @@ export default function InputForm(): JSX.Element {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    return console.log('hello');
+    const itemData = { itemName, itemDescription, itemWeight };
+    window.localStorage.setItem('itemCard', JSON.stringify(itemData));
+
+    return console.log('Item in the bag!');
   }
   return (
     <form
@@ -43,6 +46,7 @@ export default function InputForm(): JSX.Element {
           min={0.2}
           max={25}
           step={0.2}
+          onChange={(event) => setItemWeight(parseFloat(event.target.value))}
         />
       </label>
       <br />
