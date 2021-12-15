@@ -1,4 +1,5 @@
 import React from 'react';
+import { ItemCard } from '../../../types';
 import AddButton from '../../components/AddButton/AddButton';
 import Card from '../../components/Card/Card';
 import TopBar from '../../components/TopBar/TopBar';
@@ -7,7 +8,7 @@ import useLocalStorage from '../../utils/hooks/useLocalStorage';
 import classes from './MainPage.module.css';
 
 export default function MainPage(): JSX.Element {
-  const [itemCards] = useLocalStorage('itemCards', []);
+  const [itemCards] = useLocalStorage<ItemCard[]>('itemCards', []);
   console.log(itemCards);
   return (
     <div className={classes.mainpage_div}>
