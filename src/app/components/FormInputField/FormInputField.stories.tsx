@@ -7,8 +7,22 @@ export default {
 };
 
 export const RegularBlue = (): JSX.Element => (
-  <FormInputField tagColor="Blue" tagText="Item Name:" textRows={1} />
+  <FormInputField
+    tagColor="Blue"
+    tagText="Item Name:"
+    defaultText=""
+    onChange={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
 );
 export const RegularRed = (): JSX.Element => (
-  <FormInputField tagColor="Red" tagText="Item Description:" textRows={5} />
+  <FormInputField
+    tagColor="Red"
+    tagText="Item Description:"
+    defaultText=""
+    onChange={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
 );

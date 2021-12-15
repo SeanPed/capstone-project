@@ -1,15 +1,18 @@
 import React from 'react';
 import classes from './FormInputField.module.css';
+
 type inputProps = {
   tagColor: string;
   tagText: string;
-  textRows: number;
+  defaultText: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export default function FormInputField({
   tagColor,
   tagText,
-  textRows,
+  defaultText,
+  onChange,
 }: inputProps): JSX.Element {
   return (
     <div className={classes.body_container}>
@@ -28,7 +31,12 @@ export default function FormInputField({
     tr-clip bl-clip border"
         className={classes.input_container}
       >
-        <textarea className={classes.input_field} rows={textRows} />
+        <input
+          onChange={onChange}
+          type="text"
+          className={classes.input_field}
+          value={defaultText}
+        />
       </div>
     </div>
   );

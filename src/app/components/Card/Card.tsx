@@ -2,7 +2,17 @@ import React from 'react';
 import DeleteButton from '../DeleteButton/DeleteButton';
 import classes from './Card.module.css';
 
-export default function Card(): JSX.Element {
+type cardProps = {
+  itemTitle: string;
+  itemDescription: string;
+  itemWeight: number;
+};
+
+export default function Card({
+  itemTitle,
+  itemDescription,
+  itemWeight,
+}: cardProps): JSX.Element {
   return (
     <div
       data-augmented-ui="
@@ -12,15 +22,12 @@ export default function Card(): JSX.Element {
       <div className={classes.delete_button}>
         <DeleteButton />
       </div>
-      <p className={classes.item_name}>Alte kriegsaxt</p>
-      <p className={classes.item_description}>
-        Eine Alte stumpfe Kriegsaxt, kaum zu gebrauchen, Stiel scheint morsch zu
-        sein. Schneide hat Kanten.
-      </p>
+      <p className={classes.item_name}>{itemTitle}</p>
+      <p className={classes.item_description}>{itemDescription}</p>
       <div className={classes.weight_area}>
         <label>
-          Gewicht:
-          <input type="number" />
+          Gewicht: {itemWeight} kg
+          {/* <input type="number" value={itemWeight} /> */}
         </label>
       </div>
     </div>
