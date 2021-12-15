@@ -9,7 +9,7 @@ export default function InputForm(): JSX.Element {
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
   const [itemWeight, setItemWeight] = useState(0.2);
-  const [itemCards, setItemCards] = useLocalStorage([], 'itemCards');
+  const [itemCards, setItemCards] = useLocalStorage('itemCards', []);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();

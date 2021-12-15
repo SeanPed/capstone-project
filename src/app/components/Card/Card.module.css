@@ -7,11 +7,11 @@
   --aug-inlay-bg: black !important;
 
   position: relative;
-  width: 80%;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   background-color: #4ed9ff;
   justify-items: center;
+  width: 80vw;
 }
 .item_name {
   font-size: 1.5rem;
@@ -35,8 +35,7 @@
 }
 
 .weight_area {
-  margin-left: 40px;
-  padding-bottom: 15px;
+  padding-top: 10px;
   color: #6ecbf5;
   font-family: 'OriginTech', sans-serif;
 }
