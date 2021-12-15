@@ -9,4 +9,4 @@ export default {
   },
 };
 
-export const mainPage = (): JSX.Element => <LandingPage />;
+export const landingPage = (): JSX.Element => <LandingPage />;
