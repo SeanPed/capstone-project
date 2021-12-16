@@ -20,7 +20,7 @@ export default function InputForm(): JSX.Element {
     const itemData = { itemName, itemDescription, itemWeight };
     const newItemCards = [...itemCards, itemData];
     setItemCards(newItemCards);
-    navigate('/');
+    navigate('/Backpack');
   }
 
   return (
