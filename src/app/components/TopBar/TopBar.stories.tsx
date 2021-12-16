@@ -6,4 +6,4 @@ export default {
   component: TopBar,
 };
 
-export const topBar = (): JSX.Element => <TopBar />;
+export const topBar = (): JSX.Element => <TopBar currentWeight={1} />;

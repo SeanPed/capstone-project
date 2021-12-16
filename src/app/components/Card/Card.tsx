@@ -6,12 +6,14 @@ type cardProps = {
   itemTitle: string;
   itemDescription: string;
   itemWeight: number;
+  deleteFunction: () => void;
 };
 
 export default function Card({
   itemTitle,
   itemDescription,
   itemWeight,
+  deleteFunction,
 }: cardProps): JSX.Element {
   return (
     <div
@@ -20,15 +22,12 @@ export default function Card({
       className={classes.card_body_div}
     >
       <div className={classes.delete_button}>
-        <DeleteButton />
+        <DeleteButton deleteFunction={deleteFunction} />
       </div>
       <p className={classes.item_name}>{itemTitle}</p>
       <p className={classes.item_description}>{itemDescription}</p>
       <div className={classes.weight_area}>
-        <label>
-          Gewicht: {itemWeight} kg
-          {/* <input type="number" value={itemWeight} /> */}
-        </label>
+        <label>Gewicht: {itemWeight} kg</label>
       </div>
     </div>
   );
