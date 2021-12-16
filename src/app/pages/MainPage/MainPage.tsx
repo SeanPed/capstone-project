@@ -8,8 +8,15 @@ import useLocalStorage from '../../utils/hooks/useLocalStorage';
 import classes from './MainPage.module.css';
 
 export default function MainPage(): JSX.Element {
-  const [itemCards] = useLocalStorage<ItemCard[]>('itemCards', []);
+  const [itemCards, setItemCards] = useLocalStorage<ItemCard[]>(
+    'itemCards',
+    []
+  );
   const weightArray: number[] = [];
+
+  function deleteFunction(itemIndex: number) {
+    setItemCards(itemCards.filter((_item, index) => index !== itemIndex));
+  }
 
   function addWeights() {
     {
@@ -22,7 +29,6 @@ export default function MainPage(): JSX.Element {
   for (let i = 0; i < weightArray.length; i++) {
     combinedWeight += weightArray[i];
   }
-  console.log(combinedWeight);
 
   return (
     <div className={classes.mainpage_div}>
@@ -35,6 +41,10 @@ export default function MainPage(): JSX.Element {
         </div>
         {itemCards.map((item) => (
           <Card
+            key={itemCards.indexOf(item)}
+            deleteFunction={() => {
+              deleteFunction(itemCards.indexOf(item));
+            }}
             itemTitle={item.itemName}
             itemDescription={item.itemDescription}
             itemWeight={item.itemWeight}

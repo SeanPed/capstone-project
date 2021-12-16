@@ -6,4 +6,10 @@ export default {
   component: DeleteButton,
 };
 
-export const Regular = (): JSX.Element => <DeleteButton />;
+export const Regular = (): JSX.Element => (
+  <DeleteButton
+    deleteFunction={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
+);
