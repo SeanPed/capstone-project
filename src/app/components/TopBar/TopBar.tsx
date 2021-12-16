@@ -1,7 +1,11 @@
 import React from 'react';
 import classes from './TopBar.module.css';
 
-export default function TopBar(): JSX.Element {
+type TopBarProp = {
+  currentWeight: number;
+};
+
+export default function TopBar({ currentWeight }: TopBarProp): JSX.Element {
   return (
     <div
       data-augmented-ui="
@@ -9,7 +13,7 @@ export default function TopBar(): JSX.Element {
       className={classes.topbar_section_div}
     >
       <p className={classes.topbar_content}>
-        currently carried weight: (Placeholder) kg
+        currently carried weight: {currentWeight} kg
       </p>
     </div>
   );
