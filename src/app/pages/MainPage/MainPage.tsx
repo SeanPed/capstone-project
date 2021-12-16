@@ -1,5 +1,5 @@
 import React from 'react';
-import { ItemCard } from '../../../types';
+import type { ItemCard } from '../../../types';
 import AddButton from '../../components/AddButton/AddButton';
 import Card from '../../components/Card/Card';
 import TopBar from '../../components/TopBar/TopBar';
