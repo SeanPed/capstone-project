@@ -13,7 +13,7 @@ export default function TopBar({ currentWeight }: TopBarProp): JSX.Element {
       className={classes.topbar_section_div}
     >
       <p className={classes.topbar_content}>
-        currently carried weight: {currentWeight} kg
+        currently carried weight: {currentWeight} / 20kg
       </p>
     </div>
   );

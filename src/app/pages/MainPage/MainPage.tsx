@@ -9,7 +9,6 @@ import classes from './MainPage.module.css';
 
 export default function MainPage(): JSX.Element {
   const [itemCards] = useLocalStorage<ItemCard[]>('itemCards', []);
-  console.log(itemCards);
   const weightArray: number[] = [];
 
   function addWeights() {
@@ -19,10 +18,16 @@ export default function MainPage(): JSX.Element {
   }
   addWeights();
 
+  let combinedWeight = 0;
+  for (let i = 0; i < weightArray.length; i++) {
+    combinedWeight += weightArray[i];
+  }
+  console.log(combinedWeight);
+
   return (
     <div className={classes.mainpage_div}>
       <div className={classes.header_div}>
-        <TopBar currentWeight={1} />
+        <TopBar currentWeight={combinedWeight} />
       </div>
       <div className={classes.card_area_div}>
         <div className={classes.button_div}>
