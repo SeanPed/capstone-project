@@ -2,9 +2,9 @@ import React from 'react';
 import type { ItemCard } from '../../../types';
 import AddButton from '../../components/AddButton/AddButton';
 import Card from '../../components/Card/Card';
+import MalusBar from '../../components/MalusBar/MalusBar';
 import TopBar from '../../components/TopBar/TopBar';
 import useLocalStorage from '../../utils/hooks/useLocalStorage';
-import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
 
 import classes from './MainPage.module.css';
 
@@ -37,6 +37,11 @@ export default function MainPage(): JSX.Element {
         <TopBar currentWeight={combinedWeight} />
       </div>
       <div className={classes.card_area_div}>
+        {combinedWeight > 20 && (
+          <div className={classes.malus_div}>
+            <MalusBar />
+          </div>
+        )}
         <div className={classes.button_div}>
           <AddButton />
         </div>

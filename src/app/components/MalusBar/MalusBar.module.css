@@ -1,13 +1,14 @@
 .malusBar_text {
+  padding-top: 10px;
   font-family: 'OriginTech', sans-serif;
 }
 .malusBar_container {
-  width: 50%;
-  margin: 10px auto;
-  padding: 10px;
+  width: 80%;
   position: relative;
   border-radius: 5px;
+  padding: 10px;
   box-shadow: 0 0 15px 5px #f7a7a3;
   background-color: red;
   text-align: center;
+  height: 50%;
 }
