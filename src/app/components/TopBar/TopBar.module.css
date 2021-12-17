@@ -14,4 +14,6 @@
 .topbar_content {
   text-align: center;
   font-family: 'OriginTech', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
