@@ -26,5 +26,5 @@ h1 {
 
 @font-face {
   font-family: 'OriginTech';
-  src: url(/Users/patrickmoller/hh-web-21-7/capstone-project/src/fonts/OriginTech.ttf);
+  src: url('/src/app/public/fonts/OriginTech.ttf');
 }
