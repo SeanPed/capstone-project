@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  background-image: url(/Users/patrickmoller/hh-web-21-7/capstone-project/src/images/background-app-1.png);
+  background-image: url(/images/background-app-1.png);
   min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;

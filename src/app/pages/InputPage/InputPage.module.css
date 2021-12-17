@@ -3,7 +3,7 @@
 .inputpage_div {
   display: flex;
   justify-items: center;
-  background-image: url(/Users/patrickmoller/hh-web-21-7/capstone-project/src/images/background-app-1.png);
+  background-image: url(/images/background-app-1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
