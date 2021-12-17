@@ -4,6 +4,7 @@ import AddButton from '../../components/AddButton/AddButton';
 import Card from '../../components/Card/Card';
 import TopBar from '../../components/TopBar/TopBar';
 import useLocalStorage from '../../utils/hooks/useLocalStorage';
+import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
 
 import classes from './MainPage.module.css';
 

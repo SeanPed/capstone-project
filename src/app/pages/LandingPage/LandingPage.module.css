@@ -1,5 +1,3 @@
-@import '../../../../node_modules/augmented-ui/augmented-ui';
-
 .landingpage_body {
   display: grid;
   grid-template-columns: 1fr;

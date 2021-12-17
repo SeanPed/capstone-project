@@ -6,4 +6,13 @@ export default {
   component: Card,
 };
 
-export const Cardtest = (): JSX.Element => <Card />;
+export const Cardtest = (): JSX.Element => (
+  <Card
+    itemTitle={''}
+    itemDescription={''}
+    itemWeight={0}
+    deleteFunction={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
+);

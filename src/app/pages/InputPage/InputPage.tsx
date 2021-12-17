@@ -2,6 +2,7 @@ import React from 'react';
 import BackButton from '../../components/BackButton/BackButton';
 import Form from '../../components/Form/Form';
 import classes from './InputPage.module.css';
+import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
 
 export default function InputPage(): JSX.Element {
   return (

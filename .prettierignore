@@ -4,3 +4,4 @@ dist
 dist-ssr
 *.local
 .eslintcache
+augmented-ui.min.css
