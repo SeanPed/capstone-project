@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import classes from './BackButton.module.css';
-import { AiOutlineRollback } from 'react-icons/Ai';
+import { AiOutlineRollback } from 'react-icons/ai';
 
 export default function BackButton(): JSX.Element {
   const navigate = useNavigate();
