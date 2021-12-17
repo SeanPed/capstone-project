@@ -38,7 +38,17 @@
 .button_div {
   z-index: 10;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 15px;
+  background-color: transparent;
+}
+.malus_div {
+  z-index: 15;
+  width: 80%;
+  height: 20%;
+  position: fixed;
+  top: 350px;
+  left: 50%;
+  transform: translate(-44%, 0);
   background-color: transparent;
 }
