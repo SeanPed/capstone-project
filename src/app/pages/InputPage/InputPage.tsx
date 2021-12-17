@@ -9,9 +9,9 @@ export default function InputPage(): JSX.Element {
       <div className={classes.button_div}>
         <BackButton />
       </div>
-      <div className={classes.placeholder_div}></div>
-      <Form />
-      <div className={classes.placeholder_div}></div>
+      <div className={classes.form_div}>
+        <Form />
+      </div>
     </div>
   );
 }
