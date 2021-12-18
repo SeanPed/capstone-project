@@ -1,5 +1,3 @@
-@import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
-
 .topbar_section_div {
   --aug-border-bg: #4ed9ff;
   --aug-border-all: 2px;

@@ -1,5 +1,3 @@
-@import '../../../../node_modules/augmented-ui/augmented-ui.min.css';
-
 .button_area_div {
   --aug-border-bg: #4ed9ff !important;
   --aug-all-height: 76px !important;
