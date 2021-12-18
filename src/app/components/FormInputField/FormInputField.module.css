@@ -15,7 +15,7 @@
 }
 .tag_color_red {
   --aug-border-bg: #ff003c !important;
-  --aug-border: 1px !important;
+  --aug-border: 2px !important;
 
   background-color: #ff003c;
   display: inline-block;

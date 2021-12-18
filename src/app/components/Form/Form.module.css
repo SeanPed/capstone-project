@@ -10,7 +10,24 @@ textarea {
   display: grid;
   justify-content: center;
 }
-
+.labelTitle {
+  font-family: 'OriginTech', sans-serif;
+  font-size: 90px;
+}
+.lable_weight {
+  font-family: 'OriginTech', sans-serif;
+  color: grey;
+  align-self: center;
+  margin-left: 30px;
+}
+.input_field_weight {
+  background-color: #303245;
+  display: block;
+  color: #eee;
+  font-size: 18px;
+  outline: 0;
+  padding: 0.5em 1em;
+}
 .submit_button {
   background-color: #ff003c;
   border: 0;
@@ -29,23 +46,5 @@ textarea {
 }
 
 .submit_button:active {
-  background-color: #06b;
-}
-.labelTitle {
-  font-family: 'OriginTech', sans-serif;
-  font-size: 90px;
-}
-.lable_weight {
-  font-family: 'OriginTech', sans-serif;
-  color: grey;
-  align-self: center;
-  margin-left: 60px;
-}
-.input_field_weight {
-  background-color: #303245;
-  display: block;
-  color: #eee;
-  font-size: 18px;
-  outline: 0;
-  padding: 0.5em 1em;
+  background-color: #1589e8;
 }
