@@ -12,9 +12,9 @@ export default function BackButton(): JSX.Element {
     >
       <button
         onClick={() => navigate('/Backpack')}
-        className={classes.back_button_symbol}
+        className={classes.back_button}
       >
-        <AiOutlineRollback size={42} className={classes.back_button_symbol} />
+        <AiOutlineRollback size={42} className={classes.back_button} />
       </button>
     </div>
   );

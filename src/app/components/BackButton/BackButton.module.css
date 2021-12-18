@@ -16,9 +16,10 @@
   transform: scale(0.5);
 }
 
-.back_button_symbol {
+.back_button {
   background-color: #fbf500;
   border: none;
   padding-bottom: 0;
-  padding-right: 10px;
+  padding-right: 8px;
+  padding-left: 2px;
 }
