@@ -1,12 +1,20 @@
 import React from 'react';
 import classes from './LoadingBar.module.css';
 
-export default function LoadingBar(): JSX.Element {
+type LoadingBarProps = {
+  completedValue: number;
+};
+
+export default function LoadingBar({
+  completedValue,
+}: LoadingBarProps): JSX.Element {
+  const loadingBarStyling = {
+    width: `${completedValue}%`,
+  };
+
   return (
-    <div className={classes.progress_bar}>
-      <span className={classes.bar}>
-        <span className={classes.progress}></span>
-      </span>
+    <div className={classes.loadingBar_container}>
+      <div style={loadingBarStyling} className={classes.loadingBar_div}></div>
     </div>
   );
 }

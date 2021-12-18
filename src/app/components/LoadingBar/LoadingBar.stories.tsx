@@ -6,4 +6,4 @@ export default {
   component: LoadingBar,
 };
 
-export const Regular = (): JSX.Element => <LoadingBar />;
+export const Regular = (): JSX.Element => <LoadingBar completedValue={0} />;

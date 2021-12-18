@@ -1,53 +1,21 @@
-.progress_bar {
-  border-radius: 5px;
-  overflow: hidden;
-  width: 50vw;
-  height: 1vh;
-  background-color: red;
+.loadingBar_container {
+  height: 2vh;
+  width: 80vw;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 50px;
+  margin: 50px;
+  box-shadow: 0 0 5px #fbf500;
+  overflow: none;
 }
-span {
-  display: block;
-}
-.bar {
-  background: rgba(0, 0, 0, 0.075);
-}
-@keyframes loader {
-  0% {
-    width: 0;
-  }
-  20% {
-    width: 10%;
-  }
-  25% {
-    width: 24%;
-  }
-  43% {
-    width: 41%;
-  }
-  56% {
-    width: 50%;
-  }
-  66% {
-    width: 52%;
-  }
-  71% {
-    width: 60%;
-  }
-  75% {
-    width: 76%;
-  }
-  94% {
-    width: 86%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.progress {
-  animation: loader 5s;
-  animation-fill-mode: forwards;
-  background: green;
-  color: #fff;
-  padding: 10px;
-  width: 0;
+
+.loadingBar_div {
+  height: 100%;
+  transition: 'width 1s ease-in-out';
+  background-color: #fbf500;
+  border-radius: 50px;
+  text-align: right;
+  border-color: #fbf500;
+  box-shadow: 0 0 10px #fbf500;
+  max-width: 100%;
 }
