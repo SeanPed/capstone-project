@@ -1,0 +1,21 @@
+.loadingBar_container {
+  height: 2vh;
+  width: 80vw;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 50px;
+  margin: 50px;
+  box-shadow: 0 0 5px #fbf500;
+  overflow: none;
+}
+
+.loadingBar_div {
+  height: 100%;
+  transition: 'width 1s ease-in-out';
+  background-color: #fbf500;
+  border-radius: 50px;
+  text-align: right;
+  border-color: #fbf500;
+  box-shadow: 0 0 10px #fbf500;
+  max-width: 100%;
+}

@@ -1,9 +1,9 @@
 .landingpage_body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   background-image: url(/images/background-app-1.png);
   min-height: 100%;
+  min-width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -11,7 +11,6 @@
   height: 100vh;
   width: 100vw;
   align-items: center;
-  justify-items: center;
 }
 
 .content_area_div {
@@ -20,13 +19,16 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  width: 100vw;
+  margin-top: -100px;
+  margin-left: -10px;
 }
 .content_area_title {
   align-items: center;
   font-family: 'OriginTech', sans-serif;
   color: #fbf500;
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: -100px;
 }
 .submit_button {
   --aug-border-all: 4px;
@@ -41,6 +43,7 @@
   text-align: center;
   width: 70%;
   font-family: 'OriginTech', sans-serif;
+  margin-top: -30px;
   margin-right: auto;
   margin-left: auto;
 }
