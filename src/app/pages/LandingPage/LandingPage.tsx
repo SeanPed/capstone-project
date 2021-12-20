@@ -8,20 +8,23 @@ export default function LandingPage(): JSX.Element {
   const [completed, setCompleted] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
-      if (completed == 100) {
+    const timeoutID = setTimeout(() => {
+      if (completed === 100) {
         return;
       }
-      setCompleted((prevCount) => prevCount + 10);
-    }, 100);
-  }, []);
+      setCompleted((prevCount) => prevCount + 1);
+    }, 30);
+    return () => {
+      clearTimeout(timeoutID);
+    };
+  }, [completed]);
   console.log(completed);
   return (
     <div className={classes.landingpage_body}>
       <div className={classes.content_area_div}>
         <p className={classes.content_area_title}>Cyberbag</p>
         <LoadingBar completedValue={completed} />
-        {completed > 100 && (
+        {completed === 100 && (
           <button
             onClick={() => navigate('/Backpack')}
             data-augmented-ui="
